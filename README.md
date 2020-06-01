@@ -22,7 +22,7 @@ Upload in the .zip file your three pages within a tidy directory structure to th
 
 ### Validate the code in the pages
 
-Validate your code using the W3C code validator.
+Validate your code using the [W3C code validator](https://validator.w3.org/).
 
 # Review Criteria
 
