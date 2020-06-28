@@ -12,6 +12,7 @@ html, body {
 
 body {
     min-height: 100vh;
+    min-width: 1200px;
 }
   
 a {
@@ -23,18 +24,15 @@ a {
 /* Header styling start */
 
 header {
-    /* position: absolute;
-    top: 0; */
-    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: brown;
 }
 
 header .nav_container {
-    display: flex;
     width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 header .nav_container:first-child {
@@ -43,6 +41,7 @@ header .nav_container:first-child {
 
 header nav {
     width: 1200px;
+    margin: 0 auto;
 }
 
 header nav ul {
@@ -101,83 +100,82 @@ header nav.utility ul li a {
 main {
     padding: 20px;
     width: 1200px;
-    margin: 0 auto;
+    margin: 130px auto 0 auto;
     min-height: 80vh;
 }
-
-
-.event_container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.event {
-    width: 590px;
-    height: 400px;
-    background-color: darkgrey;
-}
-
-.attraction_container {
-    display: flex;
-    flex-flow: row wrap;
-}
-
-.filter_container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-
-.attraction {
-    width: 240px;
-    height: 240px;
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: darkgrey;
-}
-
-.ticket_container {
-    display: flex;
-    flex-flow: row wrap;
-}
-
-.ticket {
-    width: 340px;
-    min-height: 500px;
-    margin: 20px 20px 0 0;
-    padding: 10px 20px;
-    background-color: darkgrey;
-}
-
-/* Main styling end */
 
 /* Carousel styling start */
 
 .carousel {
-    width: 1200px;
-    height: 350px;
-    margin: 0 0 20px 0;
     background-color: darkgrey;
+    width: 1200px;
+    height: 400px;
+    margin: 0 0 20px 0;
 }
 
 /* Carousel styling end */
+
+.event_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.event {
+    background-color: darkgrey;
+    height: 400px;
+}
+
+/* explicitly using repeat grid syntax */
+.attraction_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+/* using expanded grid syntax */
+.filter_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.attraction {
+    padding: 10px 20px;
+    background-color: darkgrey;
+}
+
+/* explicitly using repeat grid syntax */
+.ticket_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(500px, auto);
+}
+
+.ticket {
+    padding: 20px;
+    background-color: darkgrey;
+}
+
+/* Main styling end */
 
 /* Footer styling start */
 
 footer {
     width: 100%;
     background-color: brown;
-    display: flex;
+    display: grid;
     justify-content: center;
-    padding: 20px 0;
 }
 
 footer .inner {
     width: 1200px;
-    display: flex;
-    justify-content: space-between;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
 }
 
 footer ul {
@@ -186,9 +184,21 @@ footer ul {
     margin: 0;
 }
 
+footer nav.social {
+    grid-column: 1/4;
+    justify-self: center;
+}
+
+footer nav.social h5 {
+    font-size: 24px;
+    font-weight: normal;
+    text-decoration: underline;
+    text-align: center;
+}
+
 footer nav.social ul {
-    display: flex;
-    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
 }
 
