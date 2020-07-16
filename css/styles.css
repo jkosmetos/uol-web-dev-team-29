@@ -143,8 +143,14 @@ main {
 }
 
 .attraction {
-    padding: 10px 20px;
+    padding: 0;
     background-color: darkgrey;
+}
+
+.attraction img {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 /* explicitly using repeat grid syntax */
@@ -234,3 +240,40 @@ footer ul li a {
 }
 
 /* Footer styling end */
+
+/* Animation styling start */
+.border-animation:hover {
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+}
+.border-animation:hover:after {
+    content: "";
+    background: linear-gradient(45deg, #ccc 48.9%, #a52a2a 49%);
+    background-size: 300% 300%;
+    border-radius: 10px;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    height: calc(100% + 10px);
+    width: calc(100% + 10px);
+    z-index: -1;
+    animation: borderGradient 2s linear both infinite;
+}
+@keyframes borderGradient {
+    0%,
+    100% {
+        background-position: 0% 100%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+}
+
+.grow:hover
+{
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+/* Animation styling end */
