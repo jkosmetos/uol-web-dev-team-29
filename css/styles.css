@@ -1,5 +1,6 @@
 /*
  * Pirate logo: https://freebiesupply.com/logos/ecu-pirates-logo/
+ * Social logos: TODO ADD URL
 */
 
 /* General styling start */
@@ -140,6 +141,56 @@ main {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
     grid-auto-rows: minmax(1fr, auto);
+}
+
+/* grid gallery and hover-opacity-box relative to size */
+.gallery {
+    width: 240px;
+    height: 240px;
+    position: relative;
+} 
+
+/* image placement to cover entire box space */
+.gallery img{
+    max-width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+/* 
+ * places opacity box absolute to the grid size for each image
+ * as it displays ride name taking 0.9s to change back to the image after hovering 
+ */
+.rides {
+    opacity: 0;
+    position: absolute;
+    color: brown;
+    bottom: 0;
+    height: 100%;
+    width: 0%;
+    padding: 5px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background: #fff;
+    transition: all .9s ease;
+}
+
+.rides h3 {
+    transition: all 5s ease;
+    transform: scale(0.1);
+}
+
+/* hover box sized at 90% with opacity fadeout*/
+.gallery:hover .rides {
+    opacity: 0.8;
+    width: 90%;
+    transition: all 0.5s ease;
+}
+
+.gallery:hover .rides h3 {
+    transform: scale(1);
+    transition: all 0.9s ease;
 }
 
 /* using expanded grid syntax */
