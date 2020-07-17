@@ -1,0 +1,119 @@
+/* LM253 animations to logo, park name, and ticket purchase navigation button */
+
+/*  Logo animation: 
+    
+    The logo has been set as initially transparent, located near the first item of the navigation bar.
+    After a two seconds delay, the five-seconds animation will begin with the logo gradually becoming 
+    more opacque as it moves to the left towards it final position. 
+    While moving, it will tilt slightly before returning upright, acquiring full opacity, and remaining
+    in its final location (as the animation only iterates once).
+    The animation will start fast and end slow to draw attention to the logo becoming more evident.
+
+*/
+
+
+header nav.primary .logo {
+
+    position: relative;
+    animation-name: animatedlogo;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-direction: linear;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+/*  Park name animation:
+
+    Here the delay is one second longer compared to the logo animation, so that the park name can
+    appear right when the logo is reaching its final position and becoming fully opacque. 
+    The name of the theme park starts out completely transparent to gradually reach its full 
+    opacity once the logo is in place.    
+
+*/
+
+header nav.primary #park_name {
+
+
+    position: relative;
+    animation-name: animatedname;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-direction: linear;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+
+}
+
+/*  Ticket animation:
+
+    The animation for the navigation button to the page allocated for ticket iterates infinitely
+    so that the Book Now button can flicker continuously as a way to draw attention to the call to action.
+    The slight delay is meant to regulate the flickering effect and prevent it from actually deterring 
+    the user from engaging.
+*/
+
+header nav.primary .buy {
+
+    position: relative;
+    animation-name: animatedtickets;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+
+}
+
+
+@keyframes animatedlogo {
+    0%  {opacity: 0;
+        left: 400px;
+        height: 60;
+        transform: rotate(20deg);
+        
+        }
+
+    25% {opacity: 0.25
+        left: 0;
+        height: 80;
+        transform: rotate(0deg);
+        
+        }
+
+    50% {opacity: 0.5
+        left: 400px;
+        height: 100;
+        transform: rotate(-20deg);
+        
+        }
+
+    100% {opacity: 1;
+            left: 0;
+            height: 120;
+            transform: rotate(0deg);
+           
+        }
+
+}
+
+@keyframes animatedname {
+    0%  {opacity: 0;}
+
+    25% {opacity: 0;}
+
+    50% {opacity: 0;}
+
+   100% {opacity: 1;}
+}
+
+@keyframes animatedtickets {
+
+    0%  {opacity: 0;}
+
+    100% {opacity: 1}
+
+}
