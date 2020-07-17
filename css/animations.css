@@ -55,11 +55,11 @@ header nav.primary #park_name {
     the user from engaging.
 */
 
-header nav.primary .buy {
+header nav.primary .buy a{
 
     position: relative;
     animation-name: animatedtickets;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-delay: 3s;
     animation-iteration-count: infinite;
     animation-direction: linear;
@@ -77,14 +77,14 @@ header nav.primary .buy {
         
         }
 
-    25% {opacity: 0.25
+    25% {opacity: 0.25;
         left: 0;
         height: 80;
         transform: rotate(0deg);
         
         }
 
-    50% {opacity: 0.5
+    50% {opacity: 0.5;
         left: 400px;
         height: 100;
         transform: rotate(-20deg);

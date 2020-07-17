@@ -92,6 +92,14 @@ header nav.utility ul li a {
     margin: 0 10px 0 10px;
 }
 
+.buy{
+    background-color: #99b898;
+    padding: 25px 0;
+}
+
+.buy a {
+    color: black;
+}
 
 /* Header styling end */
 
@@ -149,8 +157,8 @@ main {
 
 .attraction img {
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 290px;
+    height: 240px;
 }
 
 /* explicitly using repeat grid syntax */
