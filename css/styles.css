@@ -3,6 +3,13 @@
  * Social logos: TODO ADD URL
 */
 
+/* Font declarations */
+
+@font-face {
+    font-family: 'Vinque';
+    src: url('../font/vinque/vinque rg.ttf')  format('truetype');
+  }  
+
 /* General styling start */
 
 html, body {
@@ -74,6 +81,14 @@ header nav.primary .logo {
     margin-right: auto;
 }
 
+header nav.primary #park_name {
+    font-family: 'Vinque', Helvetica, sans-serif;
+    text-shadow: 2px 2px 2px black, 3.5px 3.5px 3.5px burlywood; 
+    letter-spacing: 2px; 
+    font-size: 20px;
+    right: 50px;
+}
+
 header nav.utility {
     padding: 10px 0;
 }
@@ -116,10 +131,144 @@ main {
 /* Carousel styling start */
 
 .carousel {
-    background-color: darkgrey;
     width: 1200px;
     height: 400px;
     margin: 0 0 20px 0;
+    position: relative;
+}
+
+.carousel:hover .controls {
+    opacity: 1;
+}
+
+.carousel .inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.carousel .inner .item {
+    background: rgb(255, 255, 255);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.carousel .inner .item:before, .carousel .inner .item:after
+{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:0;
+    border-radius:100px / 10px;
+}
+
+.carousel .inner .item:after
+{
+    right:10px;
+    left:auto;
+    transform:skew(8deg) rotate(3deg);
+}
+
+.carousel .inner .item img {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.carousel .inner .item .content {
+    overflow: hidden; 
+    width: 100%; 
+    height: 100%; 
+    position: relative;
+}
+.carousel .inner .item .content h3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 36px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 1);
+    padding: 20px;
+    margin: 0;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.carousel .inner .item:nth-child(1) {
+    transform: scale(0.80);
+    left: -115px;
+    z-index: 0;
+    opacity: 0.5;
+}
+
+.carousel .inner .item:nth-child(2) {
+    transform: scale(0.85);
+    left: -60px;
+    z-index: 1;
+    opacity: 0.6;
+}
+
+.carousel .inner .item:nth-child(3) {
+    transform: scale(0.90);
+    z-index: 2;
+}
+
+.carousel .inner .item:nth-child(4) {
+    transform: scale(0.85);
+    right: -60px;
+    z-index: 1;
+    opacity: 0.6;
+}
+
+.carousel .inner .item:nth-child(5) {
+    transform: scale(0.80);
+    right: -115px;
+    z-index: 0;
+    opacity: 0.5;
+}
+
+.carousel .controls {
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    display: flex;
+    justify-items: center;
+    z-index: 5;
+    opacity: 0;
+}
+
+.carousel .controls .control {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    border: 2px solid #FFF;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.carousel .controls .control.left {
+    left: 85px;
+}
+
+.carousel .controls .control.right {
+    right: 85px;
 }
 
 /* Carousel styling end */
