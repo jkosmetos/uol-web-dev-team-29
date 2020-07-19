@@ -8,7 +8,12 @@
 @font-face {
     font-family: 'Vinque';
     src: url('../font/vinque/vinque rg.ttf')  format('truetype');
-  }  
+  }
+
+@font-face {
+    font-family: 'Chewy';
+    src: url('../font/Chewy/Chewy-Regular.ttf');
+}
 
 /* General styling start */
 
@@ -120,7 +125,9 @@ header nav.utility ul li a {
 /* Header styling end */
 
 /* Main styling start */
-
+h1 {
+    font-family: 'Chewy', cursive;
+}
 main {
     padding: 20px;
     width: 1200px;
