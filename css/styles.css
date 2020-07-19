@@ -7,12 +7,12 @@
 
 @font-face {
     font-family: 'Vinque';
-    src: url('../font/vinque/vinque rg.ttf')  format('truetype');
+    src: url('../font/vinque/vinque rg.ttf') format('truetype');
   }
 
 @font-face {
     font-family: 'Chewy';
-    src: url('../font/Chewy/Chewy-Regular.ttf');
+    src: url('../font/chewy/Chewy-Regular.ttf') format('truetype');
 }
 
 /* General styling start */
@@ -30,6 +30,10 @@ body {
   
 a {
     text-decoration: none;
+}
+
+h1, h2, h3 {
+    font-family: 'Chewy', cursive;
 }
 
 /* General styling end */
@@ -125,9 +129,7 @@ header nav.utility ul li a {
 /* Header styling end */
 
 /* Main styling start */
-h1 {
-    font-family: 'Chewy', cursive;
-}
+
 main {
     padding: 20px;
     width: 1200px;
@@ -267,8 +269,7 @@ main {
     box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
-.box:before, .box:after
-{
+.box:before, .box:after {
     content: "";
     position: absolute;
     z-index: -1;
@@ -280,8 +281,7 @@ main {
     border-radius: 100px / 10px;
 }
 
-.box:after
-{
+.box:after {
     right: 10px;
     left: auto;
     transform: skew(8deg) rotate(3deg);
@@ -301,8 +301,7 @@ main {
     transition: all 0.5s ease;
 }
 
-.event:hover
-{
+.event:hover {
     margin-top: -10px;
     box-shadow: 0px 15px 15px -4px rgba(0, 0, 0, 0.7);
 }
@@ -418,59 +417,57 @@ main {
 .ticket {
     padding: 20px;
 }
+
 /*
-add a different colour to each ticket type
+ * add a different colour to each ticket type
  */
-.ticket-bronze
-{
+.ticket-bronze {
     background-color: #a46628;
     box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
     text-align: center;
     transition: 0.5s;
 }
 
-.ticket-silver
-{
+.ticket-silver {
     background-color: #D3D3D3;
     box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
     text-align: center;
     transition: 0.5s;
 }
-.ticket-gold
-{
+.ticket-gold {
     background-color: #FFD700;
     box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
     text-align: center;
     transition: 0.5s;
 }
 
-.ticket h2{
+.ticket h2 {
     text-transform: uppercase;
     color: #111d5e;
 }
 
-.price{
+.price {
     border-radius: 40%;
     border: 5px solid;
     margin: auto;
     width: 10em;
 }
 
-.price h3{
+.price h3 {
     font-size: 40px;
 }
 
-.features{
+.features {
     border: thick double ;
     margin: 10px;
 }
 
-.ticket h4{
+.ticket h4 {
     margin: 5px;
     padding: 15px;
 }
 
-.ticket:hover{
+.ticket:hover {
     transform: scale(1.1);
 }
 
@@ -482,6 +479,7 @@ add a different colour to each ticket type
     margin: auto;
     background-color: #ddf3f5;
 }
+
 .ticket-buy-btn:hover
 {
     background-color: #99b898;
@@ -520,7 +518,7 @@ footer nav.social {
     justify-self: center;
 }
 
-footer nav.social h5 {
+footer nav.social h3 {
     font-size: 24px;
     font-weight: normal;
     text-decoration: underline;
@@ -536,6 +534,7 @@ footer nav.social ul {
 footer nav.social ul li {
     margin: 0 15px;
 }
+
 footer nav.social ul li img {
     filter: gray;
     -webkit-filter: grayscale(1);
@@ -551,7 +550,7 @@ footer ul li {
     margin-bottom: 15px;
 }
 
-footer ul li h5 {
+footer ul li h3 {
     font-size: 24px;
     font-weight: normal;
     margin: 0;
