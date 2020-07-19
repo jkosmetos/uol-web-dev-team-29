@@ -417,19 +417,63 @@ add a different colour to each ticket type
 .ticket-bronze
 {
     background-color: #a46628;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: 0.5s;
 }
+
 .ticket-silver
 {
     background-color: #D3D3D3;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: 0.5s;
 }
 .ticket-gold
 {
     background-color: #FFD700;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: 0.5s;
 }
+
+.ticket h2{
+    text-transform: uppercase;
+    color: #111d5e;
+}
+
+.price{
+    border-radius: 40%;
+    border: 5px solid;
+    margin: auto;
+    width: 10em;
+}
+
+.price h3{
+    font-size: 40px;
+}
+
+.features{
+    border: thick double ;
+    margin: 10px;
+}
+
+.ticket h4{
+    margin: 5px;
+    padding: 15px;
+}
+
+.ticket:hover{
+    transform: scale(1.1);
+}
+
 
 .ticket button {
     display: block;
-    width: 100%;
+    width: 50%;
+    height: 100px;
+    margin: auto;
+    background-color: #ddf3f5;
 }
 .ticket-buy-btn:hover
 {
