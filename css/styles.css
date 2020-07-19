@@ -410,7 +410,33 @@ main {
 
 .ticket {
     padding: 20px;
-    background-color: darkgrey;
+}
+/*
+add a different colour to each ticket type
+ */
+.ticket-bronze
+{
+    background-color: #a46628;
+}
+.ticket-silver
+{
+    background-color: #D3D3D3;
+}
+.ticket-gold
+{
+    background-color: #FFD700;
+}
+
+.ticket button {
+    display: block;
+    width: 100%;
+}
+.ticket-buy-btn:hover
+{
+    background-color: #99b898;
+    -webkit-transition: background-color 5000ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
 }
 
 /* Main styling end */
