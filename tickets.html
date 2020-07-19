@@ -165,7 +165,7 @@
                         <h3>Newsletter</h3>
                         <ul>
                             <li>
-                                <a href="#">Sign Up</a>
+                                <a class="popup" href="#">Sign Up</a>
                             </li>
                         </ul>
                     </li>
@@ -191,6 +191,31 @@
         </div>
     </footer>
     
+    <div class="overlay">
+        <div class="sign_up_form">
+            <img src="/img/pirate-logo.png" alt="Logo" />
+            <h1> Ahoy there, </h1>
+            <h2>Arrrsome Pirate</h2>
+            <p>Sign up now to start receiving our newsletter, and get <b>20% off</b> your next visit!</p>
+            <form>
+                <input type="email" class="input_box" placeholder="Your Email" name="email" id="email" required /> 
+                <br />
+                <br />
+                <input type="password" class="input_box" placeholder="Password" name="password" id="password" required />
+                <p>
+                    <span>
+                        <input type="checkbox" name="accept">
+                    </span> I agree to the terms of service
+                </p>
+                <button type="submit" class="signup_btn">Sign up</button>
+                <hr />
+                <p>
+                    Do you have an account? <a href="#">Sign in</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
     <script src="js/scripts.js"></script>
 
 </body>
