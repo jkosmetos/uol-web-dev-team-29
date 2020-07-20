@@ -1,0 +1,233 @@
+commit 1eb9ddda11a3b434b2fa1662a64ad429a1031d01
+Author: John Kosmetos <jkosmetos@gmail.com>
+Date:   Mon Jul 20 06:06:07 2020 +0200
+
+    Fleshed out comments
+
+commit 97947f83fec926864a754eae62e629e10544abd9
+Author: John Kosmetos <jkosmetos@gmail.com>
+Date:   Mon Jul 20 01:13:18 2020 +0200
+
+    Updated heading tags as per W3C standards, Updated lang attribute as per W3C standard
+
+commit 6f744527537657115af8212664549e3d15330c0a
+Author: John Kosmetos <jkosmetos@gmail.com>
+Date:   Mon Jul 20 01:04:30 2020 +0200
+
+    Implemented Toni's pop-up markup and styles, Added Javascript click handlers, Altered styling and markup to fit the design
+
+commit e78326ac39d8178964398c3f8bbc4393a20915a6
+Author: John Kosmetos <jkosmetos@gmail.com>
+Date:   Sun Jul 19 17:35:18 2020 +0200
+
+    Cleaned up stylesheet syntax, Added h2 & h3 font styling, Updated footer heading markup
+
+commit 65ec5a1c143beea82c4acb617b33e6dff7d21ec9
+Author: Mohamed Ashraf <mohammed.ashraaf.15@gmail.com>
+Date:   Sun Jul 19 13:55:04 2020 +0200
+
+    Add a font style for headings
+
+commit 378a5c0a47f7b9a41c78b1e981bbf8cf938cdcbf
+Author: Ahmed Mohammed Abdelaziz Hasan <wolfrine97@gmail.com>
+Date:   Sun Jul 19 13:15:51 2020 +0200
+
+    Modifed the tickets to be a little bit more responsive. Visual updates to them
+
+commit 64e899645c5c277097115914e01e91d45e110987
+Merge: fff1ac4 bb425f7
+Author: John Kosmetos <jkosmetos@gmail.com>
+Date:   Sun Jul 19 03:04:23 2020 +0200
+
+    Merge branch 'master' of https://github.com/jkosmetos/uol-web-dev-team-29
+    
+    * 'master' of https://github.com/jkosmetos/uol-web-dev-team-29:
+      Add style to tickets button
+
+commit fff1ac4fc2959a4a6fa9a5ffa9fbab72b1aae2b5
+Author: John Kosmetos <jkosmetos@gmail.com>
+Date:   Sun Jul 19 03:04:10 2020 +0200
+
+    Added generic box border class, Removed unused animations, Styled home page events, Removed orphaned images
+
+commit bb425f7e37ee2c171323d6201ba0564cadaa9ed0
+Merge: 4d717cc 8756292
+Author: Mohamed Ashraf <mohammed.ashraaf.15@gmail.com>
+Date:   Sun Jul 19 01:56:45 2020 +0200
+
+    Merge branch 'master' of https://github.com/jkosmetos/uol-web-dev-team-29
+
+commit 4d717ccfaa0f50b539a1a040482b8aaa47bf306a
+Author: Mohamed Ashraf <mohammed.ashraaf.15@gmail.com>
+Date:   Sun Jul 19 01:56:19 2020 +0200
+
+    Add style to tickets button
+
+commit 96403e6a664e2154a05ae0979a9ab0ad8bbcd74e
+Merge: 8756292 cafc7b1
+Author: John Kosmetos <jkosmetos@gmail.com>
+Date:   Sun Jul 19 01:32:29 2020 +0200
+
+    On toni: Css changes
+
+commit cafc7b1ce968cffadffd3cb55842b18240651115
+Author: John Kosmetos <jkosmetos@gmail.com>
+Date:   Sun Jul 19 01:32:29 2020 +0200
+
+    index on toni: 8756292 Merge branch 'master' into feature/toni
+
+commit 8756292862d6c58262316a08a63e87fd3c0b035b
+Merge: 5e66eec 9d714a7
+Author: John Kosmetos <jkosmetos@gmail.com>
+Date:   Sun Jul 19 01:24:41 2020 +0200
+
+    Merge branch 'master' into feature/toni
+    
+    * master:
+      Reduced carousel image file size
+      Removed exclamation point
+      Updated logo font, Added carousel styling, Moved logo inline styling to CSS file
+      fix images path
+    
+    # Conflicts:
+    #       attractions.html
+
+commit 9d714a7a5a03647a96f2d825fb0d4c2bf378d235
+Author: John Kosmetos <jkosmetos@gmail.com>
+Date:   Sun Jul 19 01:21:25 2020 +0200
+
+    Reduced carousel image file size
+
+commit ea58bbbb6181c58a7382ff562604c2b9abd0a0fa
+Author: John Kosmetos <jkosmetos@gmail.com>
+Date:   Sat Jul 18 18:57:30 2020 +0200
+
+    Removed exclamation point
+
+commit 06d86eb21b92d2abca99f3fed12c11333f455baf
+Merge: ecb8c74 d2d988f
+Author: John Kosmetos <jkosmetos@gmail.com>
+Date:   Sat Jul 18 18:39:31 2020 +0200
+
+    Merge branch 'master' of https://github.com/jkosmetos/uol-web-dev-team-29
+    
+    * 'master' of https://github.com/jkosmetos/uol-web-dev-team-29:
+      fix images path
+
+commit ecb8c7494736d7bc85689835fc494e80df650184
+Author: John Kosmetos <jkosmetos@gmail.com>
+Date:   Sat Jul 18 18:39:23 2020 +0200
+
+    Updated logo font, Added carousel styling, Moved logo inline styling to CSS file
+
+commit 5e66eec0651af22a88888406f772278cf8f85ab5
+Author: John Kosmetos <jkosmetos@gmail.com>
+Date:   Fri Jul 17 21:24:04 2020 +0200
+
+    Toni's changes
+
+commit d2d988f473e2c28a76fc72adcb64725752f56c37
+Author: Mohamed Ashraf <mohammed.ashraaf.15@gmail.com>
+Date:   Fri Jul 17 21:14:45 2020 +0200
+
+    fix images path
+
+commit 34f93554673575ea82a56009be9136d7945c1cb4
+Author: Ahmed Mohammed Abdelaziz Hasan <wolfrine97@gmail.com>
+Date:   Fri Jul 17 16:20:11 2020 +0200
+
+    Added images to the attractions page. Modified the book now button visually.
+
+commit 54c9968cc6b82a68c18f1f31cb461abff43c8b05
+Author: Ahmed Mohammed Abdelaziz Hasan <wolfrine97@gmail.com>
+Date:   Fri Jul 17 13:24:08 2020 +0200
+
+    Added the border animation, they were missing after the last commit
+
+commit 353055eb4356e772e1136db006b23d760592773b
+Author: LM253 <66426885+LM253@users.noreply.github.com>
+Date:   Fri Jul 17 09:09:55 2020 +0200
+
+    added park name and id for animations
+    
+    added theme park name and gave it an id to use to animate it in the animations.css file - LM253
+
+commit b09bd16706a5c610ed6fd9066e6d66407ffe196a
+Author: LM253 <66426885+LM253@users.noreply.github.com>
+Date:   Fri Jul 17 09:07:39 2020 +0200
+
+    added animations to main nav bar
+    
+    added animations to logo, park name, and "book now" navigation button
+
+commit 82b44fb9f173bf6507168ac01acb6e06e4dc989a
+Author: Mohamed Ashraf <mohammed.ashraaf.15@gmail.com>
+Date:   Thu Jul 16 10:33:59 2020 +0200
+
+    Add animatino to attractions and even boxes
+
+commit 6691b8b9cc42e9d5e0e4543fbbfd7b41ed5be070
+Author: John Kosmetos <jkosmetos@gmail.com>
+Date:   Mon Jun 29 00:11:45 2020 +0200
+
+    Added attraction min height
+
+commit 2626e4d16a768656e895f39c9aeb7ee4a73f6028
+Author: John Kosmetos <jkosmetos@gmail.com>
+Date:   Mon Jun 29 00:08:51 2020 +0200
+
+    Updated meta description, Updated page titles
+
+commit fa35c08838d22455247c24f78f5e6416cb37dac4
+Author: John Kosmetos <jkosmetos@gmail.com>
+Date:   Mon Jun 29 00:06:07 2020 +0200
+
+    Updated footer structure, Moved most flex layouts to grid layouts
+
+commit a654f497cf38371940b20062e2d755c7f5f3d0f5
+Author: John Kosmetos <jkosmetos@gmail.com>
+Date:   Mon Jun 22 03:56:49 2020 +0200
+
+    Updated section structures, Added missing image alt tags, Removed unnecessary ul role attributes
+
+commit 27a098df69e251bd909f0934fb09e5c2d9ab73d8
+Author: John Kosmetos <jkosmetos@gmail.com>
+Date:   Mon Jun 22 03:46:55 2020 +0200
+
+    Updated page titles
+
+commit 97ccdd9522c9f58fe49d5c92be0ec740ba1f35eb
+Author: John Kosmetos <jkosmetos@gmail.com>
+Date:   Mon Jun 22 03:43:58 2020 +0200
+
+    Initial commit
+
+commit e70685351ef1b5cbb013071ebdba6d4192453f9e
+Author: John Kosmetos <jkosmetos@gmail.com>
+Date:   Mon Jun 1 20:22:32 2020 +0200
+
+    Updated heading to be more specific
+
+commit e09ae5ef2f9c541c2e715c5e4a7f555edf65e658
+Author: John Kosmetos <jkosmetos@gmail.com>
+Date:   Mon Jun 1 19:25:27 2020 +0200
+
+    Added W3C code validator URL
+
+commit 1c71171d1afbc194cd9995966910c451335cf170
+Author: John Kosmetos <jkosmetos@gmail.com>
+Date:   Mon Jun 1 19:21:05 2020 +0200
+
+    Updated README formatting
+
+commit 1169a0be748dfcab584fda66285fe558bf2929ab
+Author: John Kosmetos <jkosmetos@gmail.com>
+Date:   Mon Jun 1 19:17:44 2020 +0200
+
+    Updated README
+
+commit a147cb8867faa02e8940870e0c3eaab063710b14
+Author: John Kosmetos <jkosmetos@gmail.com>
+Date:   Mon Jun 1 19:11:39 2020 +0200
+
+    Initial commit
